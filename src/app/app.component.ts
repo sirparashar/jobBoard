@@ -52,6 +52,6 @@ export class AppComponent implements OnInit {
   }
 
   navigateToJob(e:any){
-    window.open(e);
+    window.open(e,'_blank');
   }
 }
