@@ -25,7 +25,7 @@ a {
   }
 
   .loadButton {
-    background-color: blueviolet;
+    background-color: #ff6600;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -33,13 +33,14 @@ a {
     padding: 8px 12px;
     &:hover{
         cursor: pointer;
+        background-color: #e65c00;
       }
   }
 
   .title {
     font-size: 40px;
     font-weight: bold;
-    color:blueviolet;
+    color: #ff6600;
     margin-bottom: 24px;
     display: flex;
     justify-content: center;

@@ -1,7 +1,7 @@
-<div class="container"><h1 class="title">{{ title }}</h1>
+<div class="body"><div class="container"><h1 class="title">{{ title }}</h1>
 
-<div class="jobs" *ngFor="let job of alljobs">
-  <div class="job">
+<div class="jobs" role ="list" >
+  <div class="job" role="listitem" *ngFor="let job of alljobs">
     <h2>
       <a class="url" *ngIf="job.url" (click)="navigateToJob(job.url)">{{ job.title }}</a>
       <span *ngIf="!job.url">{{ job.title }}</span>
@@ -10,4 +10,5 @@
   </div>
 </div>
 <button class="loadButton"*ngIf = "pageSize<allIds.length" (click)="getJobs()">Load More Jobs</button>
+</div>
 </div>
